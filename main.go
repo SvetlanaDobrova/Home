@@ -66,6 +66,24 @@ func main() {
 						name:   "Плита",
 					},
 					{
+						height: 2,
+						width:  0.5,
+						length: 0.5,
+						name:   "Холодильник",
+					},
+					{
+						height: 0.4,
+						width:  0.5,
+						length: 0.45,
+						name:   "Духовка",
+					},
+					{
+						height: 1,
+						width:  0.8,
+						length: 0.7,
+						name:   "Посудомойка",
+					},
+					{
 						height: 1,
 						width:  0.7,
 						length: 1.5,
@@ -103,6 +121,33 @@ func main() {
 						width:  2,
 						length: 0.75,
 						name:   "Шкаф",
+					},
+				},
+			},
+			{
+				name:   "Гостинная",
+				height: 2.4,
+				width:  5.5,
+				length: 3,
+				area:   5.5 * 2.3,
+				furniture: []furniture{
+					{
+						height: 0.5,
+						width:  3,
+						length: 1,
+						name:   "Диван",
+					},
+					{
+						height: 1.2,
+						width:  1,
+						length: 2,
+						name:   "Стол",
+					},
+					{
+						height: 2.1,
+						width:  3,
+						length: 0.5,
+						name:   "шкаф",
 					},
 				},
 			},
