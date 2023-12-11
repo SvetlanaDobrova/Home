@@ -4,11 +4,13 @@ import "fmt"
 
 func showFurniture(f []furniture) {
 	for _, fi := range f {
-		fmt.Printf("   %s ( Высота %4.2fм, ширина %4.2fм, длина %4.2fм) \n", fi.name, fi.height, fi.width, fi.length)
+		fmt.Printf("   %s ( Высота %4.2fм, ширина %4.2fм, длина %4.2fм) \n", fi.Name, fi.Height, fi.Width, fi.Length)
 	}
 }
 
 type furniture struct {
-	height, width, length float64
-	name                  string
+	Height float64 `json:"height,omitempty"`
+	Width  float64 `json:"width,omitempty"`
+	Length float64 `json:"length,omitempty"`
+	Name   string  `json:"name,omitempty"`
 }
